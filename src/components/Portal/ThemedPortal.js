@@ -2,8 +2,7 @@
 
 import * as React from 'react';
 import Portal from './Portal';
-import ThemeProvider from '../../core/ThemeProvider';
-import withTheme from '../../core/withTheme';
+import { ThemeProvider, withTheme } from '../../core/theming';
 import type { Theme } from '../../types';
 
 type Props = {

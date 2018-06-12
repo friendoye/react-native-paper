@@ -1,8 +1,8 @@
 /* @flow */
 
 import * as React from 'react';
-import ThemeProvider from './ThemeProvider';
 import PortalHost from '../components/Portal/PortalHost';
+import { ThemeProvider } from './theming';
 import type { Theme } from '../types';
 
 type Props = {

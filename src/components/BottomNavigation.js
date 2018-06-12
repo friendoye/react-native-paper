@@ -17,7 +17,7 @@ import Surface from './Surface';
 import TouchableRipple from './TouchableRipple';
 import Text from './Typography/Text';
 import { black, white } from '../styles/colors';
-import withTheme from '../core/withTheme';
+import { withTheme } from '../core/theming';
 import type { Theme } from '../types';
 import type { IconSource } from './Icon';
 

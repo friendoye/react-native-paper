@@ -4,7 +4,7 @@ import * as React from 'react';
 import { StyleSheet, TextInput } from 'react-native';
 
 import color from 'color';
-import withTheme from '../core/withTheme';
+import { withTheme } from '../core/theming';
 import TouchableIcon from './TouchableIcon';
 import Surface from './Surface';
 import type { Theme } from '../types';

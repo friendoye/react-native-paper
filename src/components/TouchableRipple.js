@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import color from 'color';
-import withTheme from '../core/withTheme';
+import { withTheme } from '../core/theming';
 import type { Theme } from '../types';
 
 const ANDROID_VERSION_LOLLIPOP = 21;
