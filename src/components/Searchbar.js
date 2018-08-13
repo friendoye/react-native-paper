@@ -28,6 +28,11 @@ type Props = {
    */
   onChangeText?: (query: string) => void,
   /**
+   * Alternative callback that is called when the clear text icon was pressed.
+   * Use to intercept clear icon press event.
+   */
+  onClearPressed?: () => void,
+  /**
    * Callback to execute if we want the left icon to act as button.
    */
   onIconPress?: () => mixed,
@@ -70,6 +75,7 @@ type Props = {
  */
 class Searchbar extends React.Component<Props> {
   _handleClearPress = () => {
+    this.props.onClearPressed && this.props.onClearPressed();
     this.clear();
     this.props.onChangeText && this.props.onChangeText('');
   };
